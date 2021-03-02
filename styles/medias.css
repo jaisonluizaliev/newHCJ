@@ -1,0 +1,122 @@
+:root {
+  --dark-link: #2c2c2c;
+  --dark-link-light: #616161;
+  --light: #fafafa;
+  --red-alievi: #cc4444;
+}
+
+/*MEDIAS ==========================*/
+/*Small-Mobiles mobiles E Tablets*/
+@media (max-width:1099px) {
+  #menu {
+    height: 90vh;
+    padding: 1.5rem 1.7rem;
+    background: var(--red-alievi);
+  }
+
+  #icons {
+    margin-top: 45vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #icons a img {
+    width: 50px;
+    height: 50px;
+  
+  }
+
+  .font-1 {
+    font-size: 23px;
+    color:var(--light);
+  }
+
+  .dropdown li {
+    width: 60vw;
+    height: 55px;
+  }
+
+  .dropdown li a {
+    font-size: 19px;
+    color: var(--red-alievi);
+  } 
+}
+
+
+/*Small Mobiles*/
+@media (max-width: 300px) {
+}
+
+/*Mobiles*/
+
+/*Tablets*/
+@media (min-width: 600px) and (max-width: 1099px) {
+  
+  .dropdown li {
+    width: 40vw;
+    height: 65px;
+  }
+
+}
+
+/*laptops*/
+@media (min-width: 1100px) {
+  .container {
+    width: 98vw;
+    margin: auto;
+  }
+
+  nav {
+    background: var(--light);
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    height: 95px;
+  }
+  nav #logo {
+    margin-left: 1.9rem;
+    margin-top: 0.7rem;
+  }
+  nav #menu {
+    margin: 0 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .font-1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--dark-link);
+  }
+
+  nav #menu a:hover {
+    color: var(--dark-link-light);
+  }
+
+  nav #menu .second-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .second-child li + li {
+    margin-left: 0.8rem;
+  }
+
+  #icons {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav #burguer {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #menu.hidden {
+    opacity: 1;
+    visibility: visible;
+  }
+}

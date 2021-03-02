@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/root.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/medias.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@100;300;400;500;700&display=swap"
@@ -23,7 +25,7 @@
             height="74">
           </a>
         </div>
-        <div id="menu">
+        <div id="menu" class="hidden" >
           <ul>
             <li >
               <a class="font-1 btn" href="#" > 
@@ -79,21 +81,21 @@
           <div id="icons">
             
             <a href="#">
-              <img src="./images/icons/instagram-icon.png" 
+              <img src="./images/svg/instagram.svg" 
               alt="icone do instagram" 
               width="32" 
               height="32">
             </a>
 
             <a href="#">
-              <img src="./images/icons/facebook-icon.png" 
+              <img src="./images/svg/facebook-logo.svg" 
               alt="icone do facebook"
               width="32"
               height="32">
             </a>
             
             <a href="#">
-              <img src="./images/icons/whatsapp-icon.png" 
+              <img src="./images/svg/whatsapp.svg" 
               alt="icone do whatsapp"
               width="32"
               height="32">
@@ -101,17 +103,18 @@
           </div>
         </div>
         <div id="burguer">
-            <a href="#">
+            <a href="#" class="btn-menu">
               <img src="./images/svg/list.svg" 
                     alt="menu burguer"
                     width="40"
                     height="40"
+                    class="btn-menu"
               >
             </a>
         </div>
       </nav>
     </header>
   </div>
-  <script src="index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
